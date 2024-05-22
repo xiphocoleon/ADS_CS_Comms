@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="MAIN" Id="{2f159b9b-010a-4605-8acf-ccdac04a2932}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	sBarcodeLotNumber : STRING(50) := 'Default'; 
+	text : STRING(30) := 'hello';
+	 testInt : DINT := 9;
+	 inputRecipe : STRING(3000);
+	 nCounter : DINT := 1; 
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
